@@ -25,3 +25,51 @@ module "sandbox" {
 
   account_customizations_name = "sandbox"
 }
+
+module "sandbox" {
+  source = "./modules/aft-account-request"
+
+  control_tower_parameters = {
+    AccountEmail              = "ift+newcobackend@bohemian.cc"
+    AccountName               = "ift-newcobackend"
+    ManagedOrganizationalUnit = "Sandbox"
+    SSOUserEmail              = "ift+newcobackend@bohemian.cc"
+    SSOUserFirstName          = "Duyen"
+    SSOUserLastName           = "Backend"
+  }
+
+  change_management_parameters = {
+    change_requested_by = "HashiCorp Learn"
+    change_reason       = "new account"
+  }
+
+  custom_fields = {
+    group = "non-prod"
+  }
+
+  account_customizations_name = "sandbox"
+}
+
+module "sandbox" {
+  source = "./modules/aft-account-request"
+
+  control_tower_parameters = {
+    AccountEmail              = "ift+newcofrontend@bohemian.cc"
+    AccountName               = "ift-newcofrontend"
+    ManagedOrganizationalUnit = "Sandbox"
+    SSOUserEmail              = "ift+newcofrontend@bohemian.cc"
+    SSOUserFirstName          = "Duyen"
+    SSOUserLastName           = "Frontend"
+  }
+
+  change_management_parameters = {
+    change_requested_by = "HashiCorp Learn"
+    change_reason       = "new account"
+  }
+
+  custom_fields = {
+    group = "non-prod"
+  }
+
+  account_customizations_name = "sandbox"
+}
