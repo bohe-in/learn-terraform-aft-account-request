@@ -46,6 +46,9 @@ module "duyen-backend" {
   custom_fields = {
     group = "non-prod"
   }
+  account_tags = {
+      "location" = "backend"
+    }
 
   account_customizations_name = "sandbox"
 }
@@ -70,6 +73,10 @@ module "duyen-frontend" {
   custom_fields = {
     group = "non-prod"
   }
+
+  account_tags = {
+        "location" = "frontend"
+      }
 
   account_customizations_name = "sandbox"
 }
