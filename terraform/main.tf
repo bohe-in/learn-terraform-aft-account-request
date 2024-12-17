@@ -26,7 +26,7 @@ module "sandbox" {
   account_customizations_name = "sandbox"
 }
 
-module "sandbox" {
+module "duyen-backend" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
@@ -50,7 +50,7 @@ module "sandbox" {
   account_customizations_name = "sandbox"
 }
 
-module "sandbox" {
+module "duyen-frontend" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
