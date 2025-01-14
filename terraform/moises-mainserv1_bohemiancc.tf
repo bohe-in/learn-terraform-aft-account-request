@@ -7,8 +7,8 @@ module "moises-mainserv1_bohemiancc_bp" {
     AccountName               = "moises-mainserv1_bohemiancc"
     ManagedOrganizationalUnit = "Sandbox"
     SSOUserEmail              = "moises+mainserv1@bohemian.cc"
-    SSOUserFirstName          = ""
-    SSOUserLastName           = ""
+    SSOUserFirstName          = "test"
+    SSOUserLastName           = "hello"
   }
 
   account_tags = {
